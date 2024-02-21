@@ -36,46 +36,48 @@ export default function CartDetails() {
                   <th>Price</th>
                 </tr>
               </thead>
+              <tbody>
+                {items.map((item) => (
+                  <tr key={item.slug}>
+                    <td>
+                      <Link
+                        href={`/product/${item.slug}`}
+                        className="flex items-center"
+                      >
+                        <Image
+                          src={item.image}
+                          alt={item.name}
+                          width={50}
+                          height={50}
+                        />
+                        <span className="px-2">{item.name}</span>
+                      </Link>
+                    </td>
+                    <td className="align-middle">
+                      {' '}
+                      <button
+                        className="btn"
+                        type="button"
+                        onClick={() => decrease(item)}
+                      >
+                        -
+                      </button>
+                      <span className="px-2">{item.qty}</span>
+                      <button
+                        className="btn"
+                        type="button"
+                        onClick={() => increase(item)}
+                      >
+                        +
+                      </button>
+                    </td>
+                    <td className="align-middle">${item.price}</td>{' '}
+                  </tr>
+                ))}
+              </tbody>
             </table>
-            <tbody>
-              {items.map((item) => (
-                <tr key={item.slug}>
-                  <td>
-                    <Link
-                      href={`/product/${item.slug}`}
-                      className="flex items-center"
-                    >
-                      <Image
-                        src={item.image}
-                        alt={item.name}
-                        width={50}
-                        height={50}
-                      ></Image>
-                      <span className="px-2">{item.name}</span>
-                    </Link>
-                  </td>
-                  <td>
-                    <button
-                      className="btn"
-                      type="button"
-                      onClick={() => decrease(item)}
-                    >
-                      -
-                    </button>
-                    <span className="px-2">{item.qty}</span>
-                    <button
-                      className="btn"
-                      type="button"
-                      onClick={() => increase(item)}
-                    >
-                      +
-                    </button>
-                  </td>
-                  <td>${item.price}</td>
-                </tr>
-              ))}
-            </tbody>
           </div>
+
           <div className="card bg-base-300">
             <div className="card-body">
               <ul>
