@@ -32,26 +32,28 @@ export default async function ProductsDetails({
 
   return (
     <>
-      <div className="my-2">
+      <div className="my-4 h-auto btn btn-primary">
         <Link href="/">back to products</Link>
       </div>
       <div className="grid md:grid-cols-4 md:gap-3">
-        <div className="md:col-span-2">
-          <Image
-            src={product.image}
-            alt={product.name}
-            width={640}
-            height={640}
-            style={{
-              width: '100%',
-              height: 'auto',
-            }}
-          />
+        <div className="md:col-span-2 flex justify-center">
+          <div className="w-3/4 ">
+            <Image
+              src={product.image}
+              alt={product.name}
+              width={540}
+              height={540}
+              style={{
+                width: '100%',
+                height: 'auto',
+              }}
+            />
+          </div>
         </div>
 
         <div>
           <ul className="space-y-4">
-            <li>
+            <li className="md:mt-0 mt-3">
               <h1 className="text-xl">{product.name}</h1>
             </li>
             <li>

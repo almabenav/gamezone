@@ -63,7 +63,7 @@ const data = {
       name: 'Elden Ring',
       slug: 'elden-ring',
       category: 'Action',
-      image: '/images/eldenring.jpg',
+      image: '/images/eldenring.webp',
       price: 20,
       brand: 'FromSoftware',
       rating: 4.5,
