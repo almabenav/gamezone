@@ -28,7 +28,6 @@ const data = {
       countInStock: 7,
       description:
         'Mario Kart is a beloved racing video game series developed by Nintendo. Players choose iconic characters from the Mario universe and race against each other on whimsical tracks filled with obstacles, power-ups, and shortcuts.',
-      isFeatured: true,
     },
     {
       name: 'Call of Duty: Black Ops',
