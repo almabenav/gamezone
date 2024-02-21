@@ -49,7 +49,7 @@ const data = {
       name: 'League of Legends',
       slug: 'league-of-legends',
       category: 'MOBA',
-      image: '/images/legueoflegends.jpg',
+      image: '/images/leagueoflegends.jpg',
       price: 19,
       brand: 'Riot Games',
       rating: 4.5,
