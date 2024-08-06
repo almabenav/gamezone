@@ -16,3 +16,5 @@ npm run dev
 
 **admin user:** admin@example.com  
 **password:** wdd430
+
+**Link:** [GameZone Project](https://gamezonewdd430.vercel.app/)
